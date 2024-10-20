@@ -4,8 +4,22 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Route::get('/single-direction', function () {
+    return view('directions.single-direction');
+});
+
+Route::get('/single-mutuelle', function () {
+    return view('mutuelles.single-mutuelle');
+});
+
+
+Route::get('/contact-us', function () {
+    return view('contact-us');
+});
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
