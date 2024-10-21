@@ -7,6 +7,12 @@ Route::get('/', function () {
     return view('home');
 });
 
+
+Route::get('/dashboard/home', function () {
+    return view('dashboard.home');
+});
+
+
 Route::get('/single-direction', function () {
     return view('directions.single-direction');
 });
